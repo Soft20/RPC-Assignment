@@ -1,6 +1,11 @@
 # RPC Assignment
 _System Integration, fall 2020_
 
+_Adam Lass_
+_Pernille Lørup_
+_Rasmus Helsgaun_
+_Stephan Djurhuus_
+
 ## Objectives
 
 Banks collect data about their customers, services, and transactions. The data comes in various formats from different sources and platforms, such as mobile and web apps, ATP machines, shops, but after some processing, it is stored permanently in SQL databases.
