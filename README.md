@@ -1,10 +1,10 @@
 # RPC Assignment
 _System Integration, fall 2020_
 
-_Adam Lass_
-_Pernille Lørup_
-_Rasmus Helsgaun_
-_Stephan Djurhuus_
+_Adam Lass_  
+_Pernille Lørup_  
+_Rasmus Helsgaun_  
+_Stephan Djurhuus_  
 
 ## Objectives
 
