@@ -3,8 +3,6 @@ import { jsonDeserializer } from '@node-rpc/server/dist/deserializers/jsonDeseri
 import { IncomingMessage, ServerResponse } from 'http';
 import sqlite3, { Statement } from 'sqlite3';
 
-const promisify = require('js-promisify');
-
 const sql = sqlite3.verbose();
 const db = new sql.Database(':memory:');
 const names = ['Dora', 'Rasmus', 'Adam', 'Pernille', 'Stephan', 'Kurt'];
@@ -14,7 +12,6 @@ const initialize = async () => {
 		try {
 			db.serialize(async () => {
 				db.run('CREATE TABLE customers (name TEXT, balance Int)');
-
 				var stmt: Statement = db.prepare('INSERT INTO customers VALUES (?, ?)');
 
 				for (var i = 0; i < names.length; i++) {
@@ -22,7 +19,6 @@ const initialize = async () => {
 				}
 
 				await finalize(stmt);
-
 				await each('SELECT rowid AS id, name, balance FROM customers');
 
 				res();
